@@ -93,4 +93,8 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: OpenWrt
-        path: openwrt/bin
+        path: openwrt/bin          
+        fetch-depth: 0
+    - name: cache
+      uses: klever1988/cachewrtbuild@main
+        
